@@ -86,3 +86,5 @@
     <div class="navigation">
         <a href="{{ url('/contact') }}" class="next-navigation">Next</a>
     </div>
+@endsection
+
