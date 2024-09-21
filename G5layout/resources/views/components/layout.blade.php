@@ -19,7 +19,7 @@
     </header>
 
     <main>
-        @yield('content') <!-- This will be replaced by the content from child views -->
+        @yield('content') 
     </main>
 
     <footer class="footer">

@@ -14,14 +14,10 @@ Route::get('/contact', function () {
 });
 
 Route::get('/user', function () {
-    // Get the username from the request or default to 'Guest'
     $username = request()->input('username', 'Guest');
-    
-    // Validate username to ensure it only contains alphabetic characters
+
     if (!preg_match('/^[A-Za-z]+$/', $username)) {
         $username = 'Guest'; 
     }
-
-    // Return the user view with the username
     return view('user', ['username' => $username]);
 });
